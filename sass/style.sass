@@ -1,0 +1,483 @@
+@import '_reset.sass'
+@import '_header.sass'
+@import '_header777.sass'
+@import '_footer.sass'
+
+// ------------------------------------------------------------------
+
+$max-width: 1140px
+$fontsize: 1.8rem
+$fontsizeP: 1.2rem
+$fontsizeNews: 22px
+$background_color: rgb(250, 250, 250)
+$color: rgb(35, 35, 35)
+$border_color: rgb(235, 235, 235)
+$background_color_translucent: rgba(15, 132, 170, 0.65)
+$padding: 80px 80px 80px 0
+
+// ------------------------------------------------------------------    
+
+@mixin flex()
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+
+// ------------------------------------------------------------------            
+
+*
+    p
+        line-height: 1.6
+
+.main
+    position: relative
+    .mainContent
+        margin: 0 auto
+        .mainContentNews
+            position: relative
+            max-width: $max-width
+            margin: 0 auto
+            .mainContentNewsText
+                width: 48%
+                display: inline-block
+                padding: $padding
+                h1
+                    font-size: $fontsize
+                    margin: 0 0 40px 0
+                p
+                    font-size: $fontsizeP
+
+        .mainContentOther
+            position: relative
+            max-width: $max-width
+            margin: 0 auto
+            padding: 0 0 80px 0
+            .mainContentOtherContent
+                max-width: $max-width
+                display: flex
+                flex-wrap: wrap
+                justify-content: center
+                .mainContentOtherContentBox
+                    width: 31%
+                    margin: 13px
+                    span
+                        a
+                            font-style: italic
+                            color: $background_color_translucent
+                            text-decoration: none
+                    h1
+                        font-size: $fontsizeNews
+                        margin: 0 0 30px 0
+                    p
+                        line-height: 1.6
+.about
+    width: 100%
+    height: 600px
+    background: url(../images/banner28.jpg) no-repeat center center
+    background-size: cover
+    position: relative
+    display: flex
+    justify-content: center
+    .aboutContent
+        max-width: $max-width
+        margin: 0 auto
+        display: flex
+        align-items: center
+        &::before
+            content: ""
+            width: 60%
+            height: 600px
+            margin: 0 auto
+            position: absolute
+            left: 0
+            background-color: rgba(0, 0, 0, 0.453)
+        .aboutContentCladding
+            padding: 30px 30px 30px0 0
+            .aboutContentText
+                position: relative
+                width: 50%
+                margin: 0 0 40px 0
+                h1
+                    color: #fff
+                    font-size: $fontsize
+                    margin-bottom: 40px
+                p
+                    color: #fff
+                    font-size: $fontsizeP
+                    line-height: 1.8
+            .aboutContentImg
+                position: relative
+                width: 50%
+                .aboutContentImgTitle
+                    display: flex
+                    h1
+                        color: #fff
+                        font-size: $fontsize
+                        margin-bottom: 20px
+                .aboutContentImgContent
+                    display: flex
+                    flex-wrap: wrap
+                    .aboutContentImgBox
+                        width: 31%
+                        height: 100px
+                        display: inline-block
+                        overflow: hidden
+                        margin: 0 10px 0 0
+                        .aboutContentImgBoxImg
+                            width: auto
+                            height: auto
+                            max-width: 100%
+                            max-height: 100%
+                            img
+                                width: 100%
+                                height: 100%
+.connect
+    position: relative
+    background-color: #000
+    .connectContent
+        max-width: $max-width
+        margin: 0 auto
+        padding: 100px 0
+        .connectContentTitle
+            text-align: center
+            margin: 0 0 60px 0
+            p
+                color: #fff
+        .connectContentButton
+            display: flex
+            justify-content: center
+            a
+                color: #fff
+                padding: 20px
+                text-decoration: none
+                background-color: $background_color_translucent
+                position: relative
+                overflow: hidden
+                &:hover::before
+                    opacity: 1
+                    transform: scale(4)
+                &::before
+                    content: ""
+                    width: 100%
+                    height: 100%
+                    position: absolute
+                    top: -50px
+                    left: -50px
+                    opacity: 0.1
+                    transform: scale(0.0)
+                    border-radius: 50%
+                    display: inline-block
+                    background-color: rgba(255, 255, 255, 0.472)
+                    transition: 1s ease-in-out
+.mainArticle
+    position: relative
+    background: url(../images/banner32.jpg) no-repeat center center
+    .mainArticleContent
+        margin: 0 auto
+        padding: 100px
+        display: flex
+        justify-content: flex-end
+        position: relative
+        &::before
+            content: ""
+            width: 60%
+            height: 100%
+            display: inline-block
+            position: absolute
+            top: 0
+            right: 0
+            background-color: #fafafaa7
+        .mainArticleContentText
+            width: 50%
+            position: relative
+            z-index: 2
+            h6
+                font-style: italic
+                margin: 0 0 30px 0
+            h1
+                font-weight: 300
+                font-size: $fontsize
+                margin: 0 0 30px 0
+            p
+                margin: 0 0 30px 0
+            .mainArticleContentTextContent
+                position: relative
+                .mainArticleContentTextContentBox
+                    margin: 0 0 30px 0
+                    .mainArticleContentTextContentBoxTitle
+                        display: flex
+                        i
+                            color: $background_color_translucent
+                            font-size: 26px
+                            margin-right: 20px
+                        h2
+                            margin: 0 0 30px 0
+                    p
+                        line-height: 1.5
+                    a
+                        text-decoration: none
+                        color: $background_color_translucent
+.serve
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    align-items: center
+    position: relative
+    background: url(../images/banner33.jpg) no-repeat center center
+    &::before
+        content: ""
+        width: 100%
+        height: 100%
+        display: inline-block
+        position: absolute
+        top: 0
+        left: 0
+        background-color: rgba(0, 0, 0, 0.735)
+    .serveContent
+        width: $max-width
+        padding: 100px 0
+        position: relative
+        z-index: 2
+        display: flex
+        justify-content: center
+        flex-wrap: wrap
+        align-items: center
+        .serveContentBox
+            width: 22%
+            margin: 10px
+            text-align: center
+            line-height: 2
+            i
+                font-size: 32px
+                color: $background_color_translucent
+            h6
+                font-size: 32px
+                color: #fff
+            p
+                color: #fff
+.article
+    position: relative
+    .articleContent
+        max-width: $max-width
+        margin: 0 auto
+        padding: 100px 0
+        .articleContentTitle
+            width: 40%
+            margin: 0 0 40px 0
+            h1
+                font-size: $fontsize
+                margin: 0 0 20px 0
+        .articleContentText
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+            .articleContentTextBox
+                width: 32%
+                margin-right: 15px
+                .articleContentTextBoxImg
+                    position: relative
+                    overflow: hidden
+                    height: auto
+                    figcaption
+                        position: absolute
+                        top: 20px
+                        left: 20px
+                        padding: 8px
+                        color: rgb(255, 255, 255)
+                        background-color: rgba(0, 0, 0, 0.2)
+                        border-color: rgb(255, 255, 255)
+                        border: 1px solid
+                        strong
+                            width: 100%
+                            display: inline-block
+                            margin: 0 0 6px 0
+                            &:nth-child(2)
+                                margin: 0
+                img
+                    width: 100%
+                    height: 100%
+            h6
+                font-size: 20px
+                margin: 20px 0
+            p
+                line-height: 2
+                margin: 20px 0
+            a
+                color: $background_color_translucent
+                text-decoration: none
+#topContent a
+    position: fixed
+    right: 40px
+    bottom: 40px
+    width: 40px
+    height: 40px
+    display: inline-block
+    background: $background_color_translucent
+    border-radius: 50%
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    -ms-border-radius: 50%
+    -o-border-radius: 50%
+    transform: scale(1, 1)
+    -webkit-transform: scale(1, 1)
+    -moz-transform: scale(1, 1)
+    -ms-transform: scale(1, 1)
+    -o-transform: scale(1, 1)
+    transition: 0.4s ease-in-out
+    -webkit-transition: 0.4s ease-in-out
+    -moz-transition: 0.4s ease-in-out
+    -ms-transition: 0.4s ease-in-out
+    -o-transition: 0.4s ease-in-out
+    &:hover
+        animation: topContentMove 1s ease-in-out
+        -webkit-animation: topContentMove 1s ease-in-out
+    span
+        &:nth-child(1)
+            width: 16px
+            height: 16px
+            display: inline-block
+            position: absolute
+            left: 29%
+            top: 37%
+            transform: rotate(45deg)
+            -webkit-transform: rotate(45deg)
+            -moz-transform: rotate(45deg)
+            -ms-transform: rotate(45deg)
+            -o-transform: rotate(45deg)
+            border-top: 1px solid white
+            border-left: 1px solid white
+
+    &:nth-child(2)
+        width: 1px
+        height: 50%
+        display: inline-block
+        background-color: white
+        position: absolute
+        left: 50%
+        top: 34%
+
+@keyframes topContentMove
+    0%
+        transform: translateX(200px) rotate(360deg)
+        -webkit-transform: translateX(200px) rotate(360deg)
+        -moz-transform: translateX(200px) rotate(360deg)
+        -ms-transform: translateX(200px) rotate(360deg)
+        -o-transform: translateX(200px) rotate(360deg)
+
+    100%
+        transform: translateX(0px) rotate(0deg)
+        -webkit-transform: translateX(0px) rotate(0deg)
+        -moz-transform: translateX(0px) rotate(0deg)
+        -ms-transform: translateX(0px) rotate(0deg)
+        -o-transform: translateX(0px) rotate(0deg)
+
+@media screen and (max-width: 1200px)
+    .main
+        .mainContent
+            .mainContentNews
+                display: flex
+                justify-content: center
+                .mainContentNewsText
+                    width: 90%
+                    padding: 100px 0
+
+            .mainContentOther
+                .mainContentOtherContent
+                    .mainContentOtherContentBox
+                        width: 44%
+    .about
+        .aboutContent
+            .aboutContentCladding
+                padding: 40px
+
+@media screen and (max-width: 1000px)
+    .article
+        .articleContent
+            padding: 0px
+            display: flex
+            justify-content: center
+            flex-wrap: wrap
+            .articleContentTitle
+                width: 90%
+                margin: 20px
+                p
+                    line-height: 1.6
+            .articleContentText
+                .articleContentTextBox
+                    width: 45%
+                    margin: 10px
+
+@media screen and (max-width: 960px)
+    .about
+        height: 100%
+        .aboutContent
+            align-items: flex-end
+            &::before
+                width: 100%
+                height: 100%
+                bottom: 0
+            .aboutContentCladding
+                .aboutContentText
+                    width: 100%
+                .aboutContentImg
+                    width: 100%
+                    .aboutContentImgContent
+                        .aboutContentImgBox
+                            width: 100%
+                            height: 200px
+                            margin: 6px 0
+
+@media screen and (max-width: 960px)
+    .header
+        .headerContent
+            .menu
+                .menuContent
+                    ul
+                        li
+                            a
+                                color: #fff
+    .mainArticle
+        .mainArticleContent
+            padding: 30px
+            &::before
+                width: 100%
+            .mainArticleContentText
+                width: 100%
+                .mainArticleContentTextContent
+                    .mainArticleContentTextContentBox
+                        .mainArticleContentTextContentBoxTitle
+                            display: block
+                            i
+                                padding: 0 0 20px 0
+
+@media screen and (max-width: 600px)
+    .serve
+        .serveContent
+            .serveContentBox
+                width: 42%
+
+@media screen and (max-width: 480px)
+    .main
+        .mainContent
+            .mainContentOther
+                .mainContentOtherContent
+                    .mainContentOtherContentBox
+                        width: 90%
+    .about
+        .aboutContent
+            .aboutContentCladding
+                .aboutContentImg
+                    .aboutContentImgContent
+
+    .connect
+        .connectContent
+            .connectContentTitle
+                margin: 40px
+                line-height: 2
+
+    .article
+        .articleContent
+            .articleContentTitle
+            .articleContentText
+                .articleContentTextBox
+                    width: 100%

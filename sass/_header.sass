@@ -1,0 +1,213 @@
+$font-size: 26px
+$background-color: rgb(250, 250, 250)
+$color: rgb(35, 35, 35)
+$border-color: rgb(235, 235, 235)
+$background_color_translucent: rgba(15, 132, 170, 0.65)
+$margin_bottom: 40px
+
+// ------------------------------------------------------------------    
+
+@mixin flex()
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+
+// ------------------------------------------------------------------            
+
+.menu h2, .main h2, footer h2
+    font-size: $font-size
+
+.header
+    position: relative
+    .headerContent
+        margin: 0 auto
+        .banner
+            width: 100%
+            height: 600px
+            background: url(../images/banner27.jpg) no-repeat center center
+            background-size: cover
+            position: relative
+        .bannerContent
+            position: relative
+            display: flex
+            justify-content: flex-end
+            .bannerContentText
+                width: 60%
+                height: 600px
+                @include flex()
+                position: relative
+                &::before
+                    content: ""
+                    width: 100%
+                    height: 100%
+                    display: inline-block
+                    position: absolute
+                    top: 0
+                    right: 0
+                    background-color: $background_color_translucent
+                .bannerContentTextContent
+                    width: 100%
+                    position: relative
+                    z-index: 2
+                    h1
+                        color: #fff
+                        font-size: 32px
+                        text-transform: uppercase
+                        margin-bottom: $margin_bottom
+                        display: flex
+                        flex-wrap: wrap
+                        padding: 20px 20px 0 20px
+                    p
+                        color: #fff
+                        margin-bottom: $margin_bottom
+                        padding: 20px 20px 0 20px
+                        line-height: 1.6
+                    .bannerContentTextContentButton
+                        display: flex
+                        flex-wrap: wrap
+                        padding: 20px
+                        a
+                            padding: 14px
+                            color: #fff
+                            border: 1px solid #fff
+                            margin-right: 20px
+                            text-decoration: none
+                            position: relative
+                            &:hover::before
+                                width: 100%
+                            &::before
+                                content: ""
+                                width: 0
+                                height: 100%
+                                display: inline-block
+                                position: absolute
+                                top: 0
+                                left: 0
+                                background-color: #ffffff3c
+                                transition: 1s ease-in-out
+
+        .menu
+            position: absolute
+            left: 0
+            bottom: 0
+            width: 100%
+            border-color: $border-color
+            background-color: $background-color
+            .menuContent
+                max-width: 1140px
+                margin: 0 auto
+                padding: 20px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                flex-wrap: wrap
+                .menuLogo
+                    font-size: $font-size
+                    display: inline
+                ul
+                    display: flex
+                    ._menuContentLi
+                        margin: 0 25px
+                        position: relative
+                        line-height: 2
+                        &:nth-child(5)::after
+                            width: 0
+                            height: 0
+                        &::after
+                            content: ""
+                            width: 1px
+                            height: 20px
+                            display: inline-block
+                            position: absolute
+                            top: 8px
+                            right: -12px
+                            background-color: #afafaf
+                            transform: rotate(30deg)
+                    ._menuContentLi
+                        &:nth-child(2)
+                            ._menuContentLiALink::before
+                                content: ""
+                                position: absolute
+                                width: 0
+                                height: 0
+                                top: 15px
+                                left: -18px
+                                border: 6px solid $color
+                                border-color: $color transparent transparent transparent
+                        &:nth-child(3)
+                            ._menuContentLiALink::before
+                                content: ""
+                                position: absolute
+                                width: 0
+                                height: 0
+                                top: 15px
+                                left: -18px
+                                border: 6px solid $color
+                                border-color: $color transparent transparent transparent
+
+                        a
+                            color: $color
+                            text-decoration: none
+                            transition: 1s ease-in-out
+                            &:hover
+                                color: $background_color_translucent
+                            ._menuActive
+                                display: block
+                        .innerPage
+                            width: 9vw
+                            padding: 20px 40px
+                            position: absolute
+                            left: 0
+                            top: 50px
+                            display: none
+                            z-index: 2
+                            background-color: $background-color
+                            box-shadow: 2px 2px 6px 1px #b7b7b7
+                            .innerPageLiNexLevel
+                                ._menuContentLiALinkContent
+                                    position: relative
+                                    &::before
+                                        content: ""
+                                        position: absolute
+                                        width: 0
+                                        height: 0
+                                        top: 9px
+                                        left: -18px
+                                        border: 6px solid $color
+                                        border-color: $color transparent transparent transparent
+                                    .nexLevelContentActive
+                                        display: block
+                                .innerPageLiNexLevelUl
+                                    display: none
+                                    li
+                                        padding-left: 40px
+
+@media screen and (max-width: 960px)
+    .header
+        .headerContent
+            .banner
+                height: 100vh
+                .bannerContent
+                    width: 100%
+                    position: absolute
+                    bottom: 0
+                    .bannerContentText
+                        width: 100%
+                        height: 50%
+            .bannerContent
+                .bannerContentText
+                    .bannerContentTextContent
+                        .bannerContentTextContentButton
+                            a
+                                margin: 10px
+            .menu
+                top: 0
+                bottom: inherit
+                .menuContent
+                    .menuLogo
+                        .menuLogoContent
+                            h1
+                                position: relative
+                    ul
+                        display: none

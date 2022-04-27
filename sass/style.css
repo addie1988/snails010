@@ -1,0 +1,1244 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none;
+}
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.menu h2, .main h2, footer h2 {
+  font-size: 26px;
+}
+
+.header {
+  position: relative;
+}
+
+.header .headerContent {
+  margin: 0 auto;
+}
+
+.header .headerContent .banner {
+  width: 100%;
+  height: 600px;
+  background: url(../images/banner27.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+}
+
+.header .headerContent .bannerContent {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header .headerContent .bannerContent .bannerContentText {
+  width: 60%;
+  height: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header .headerContent .bannerContent .bannerContentText::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(15, 132, 170, 0.65);
+}
+
+.header .headerContent .bannerContent .bannerContentText .bannerContentTextContent {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.header .headerContent .bannerContent .bannerContentText .bannerContentTextContent h1 {
+  color: #fff;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 20px 0 20px;
+}
+
+.header .headerContent .bannerContent .bannerContentText .bannerContentTextContent p {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 20px 20px 0 20px;
+  line-height: 1.6;
+}
+
+.header .headerContent .bannerContent .bannerContentText .bannerContentTextContent .bannerContentTextContentButton {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.header .headerContent .bannerContent .bannerContentText .bannerContentTextContent .bannerContentTextContentButton a {
+  padding: 14px;
+  color: #fff;
+  border: 1px solid #fff;
+  margin-right: 20px;
+  text-decoration: none;
+  position: relative;
+}
+
+.header .headerContent .bannerContent .bannerContentText .bannerContentTextContent .bannerContentTextContentButton a:hover::before {
+  width: 100%;
+}
+
+.header .headerContent .bannerContent .bannerContentText .bannerContentTextContent .bannerContentTextContentButton a::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff3c;
+  transition: 1s ease-in-out;
+}
+
+.header .headerContent .menu {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border-color: #ebebeb;
+  background-color: #fafafa;
+}
+
+.header .headerContent .menu .menuContent {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header .headerContent .menu .menuContent .menuLogo {
+  font-size: 26px;
+  display: inline;
+}
+
+.header .headerContent .menu .menuContent ul {
+  display: flex;
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi {
+  margin: 0 25px;
+  position: relative;
+  line-height: 2;
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi:nth-child(5)::after {
+  width: 0;
+  height: 0;
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi::after {
+  content: "";
+  width: 1px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 8px;
+  right: -12px;
+  background-color: #afafaf;
+  transform: rotate(30deg);
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi:nth-child(2) ._menuContentLiALink::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 15px;
+  left: -18px;
+  border: 6px solid #232323;
+  border-color: #232323 transparent transparent transparent;
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi:nth-child(3) ._menuContentLiALink::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 15px;
+  left: -18px;
+  border: 6px solid #232323;
+  border-color: #232323 transparent transparent transparent;
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi a {
+  color: #232323;
+  text-decoration: none;
+  transition: 1s ease-in-out;
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi a:hover {
+  color: rgba(15, 132, 170, 0.65);
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi a ._menuActive {
+  display: block;
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi .innerPage {
+  width: 9vw;
+  padding: 20px 40px;
+  position: absolute;
+  left: 0;
+  top: 50px;
+  display: none;
+  z-index: 2;
+  background-color: #fafafa;
+  box-shadow: 2px 2px 6px 1px #b7b7b7;
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi .innerPage .innerPageLiNexLevel ._menuContentLiALinkContent {
+  position: relative;
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi .innerPage .innerPageLiNexLevel ._menuContentLiALinkContent::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 9px;
+  left: -18px;
+  border: 6px solid #232323;
+  border-color: #232323 transparent transparent transparent;
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi .innerPage .innerPageLiNexLevel ._menuContentLiALinkContent .nexLevelContentActive {
+  display: block;
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi .innerPage .innerPageLiNexLevel .innerPageLiNexLevelUl {
+  display: none;
+}
+
+.header .headerContent .menu .menuContent ul ._menuContentLi .innerPage .innerPageLiNexLevel .innerPageLiNexLevelUl li {
+  padding-left: 40px;
+}
+
+@media screen and (max-width: 960px) {
+  .header .headerContent .banner {
+    height: 100vh;
+  }
+  .header .headerContent .banner .bannerContent {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+  .header .headerContent .banner .bannerContent .bannerContentText {
+    width: 100%;
+    height: 50%;
+  }
+  .header .headerContent .bannerContent .bannerContentText .bannerContentTextContent .bannerContentTextContentButton a {
+    margin: 10px;
+  }
+  .header .headerContent .menu {
+    top: 0;
+    bottom: inherit;
+  }
+  .header .headerContent .menu .menuContent .menuLogo .menuLogoContent h1 {
+    position: relative;
+  }
+  .header .headerContent .menu .menuContent ul {
+    display: none;
+  }
+}
+
+.menuZoom {
+  display: none;
+  position: relative;
+}
+
+.menuZoom .menuZoomContent {
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.menuZoom .menuZoomContent .menuZoomContentButton {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+}
+
+.menuZoom .menuZoomContent .menuZoomContentButton span {
+  width: 26px;
+  height: 1px;
+  display: inline-block;
+  background-color: #232323;
+  border-radius: 50%;
+}
+
+.menuZoom .menuZoomContent .menuZoomContentButtonClosure {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  overflow: hidden;
+  right: 20px;
+  top: 20px;
+  z-index: 7;
+}
+
+.menuZoom .menuZoomContent .menuZoomContentButtonClosure span {
+  width: 100%;
+  height: 1px;
+  background-color: #232323;
+  display: inline-block;
+  position: absolute;
+  transition: 1s ease-in-out;
+}
+
+.menuZoom .menuZoomContent .menuZoomContentButtonClosure span:nth-child(1) {
+  width: 100%;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+.menuZoom .menuZoomContent .menuZoomContentButtonClosure span:nth-child(2) {
+  width: 100%;
+  opacity: 0;
+  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+}
+
+.menuZoom .menuZoomContent .menuZoomContentButtonClosure span:nth-child(3) {
+  width: 100%;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+}
+
+.menuZoom .menuZoomContent .menuZoomContentButtonContent {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.86);
+}
+
+@media screen and (max-width: 960px) {
+  .header .headerContent .banner .menu .menuContent .menuZoom {
+    display: block;
+  }
+  .header .headerContent .banner .menu .menuContent .menuZoom .menuZoomContent .menuZoomContentButton {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    overflow: hidden;
+    right: 0;
+    position: relative;
+  }
+  .header .headerContent .banner .menu .menuContent .menuZoom .menuZoomContent .menuZoomContentButton span {
+    position: relative;
+    top: -4px;
+  }
+  .header .headerContent .banner .menu .menuContent .menuZoom .menuZoomContent .menuZoomContentButton span:nth-child(2) {
+    top: -12px;
+  }
+  .header .headerContent .banner .menu .menuContent .menuZoom .menuZoomContentButtonContent {
+    height: 100%;
+    overflow: hidden;
+    background-color: #fafafa;
+    position: fixed;
+    transition: 1s ease-in-out;
+  }
+  .header .headerContent .banner .menu .menuContent .menuZoom .menuZoomContentButtonContent h1 {
+    text-align: left;
+    position: fixed;
+    top: 80px;
+    left: -30px;
+    color: rgba(15, 132, 170, 0.65);
+    font-size: 120px;
+    font-weight: 600;
+    border-top: 1px solid;
+    width: 100%;
+    opacity: 0.8;
+    writing-mode: vertical-lr;
+  }
+  .header .headerContent .banner .menu .menuContent .menuZoom .menuZoomContentButtonContent .menuZoomContentButtonContentMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    float: right;
+    width: 100%;
+    top: 140px;
+  }
+  .header .headerContent .banner .menu .menuContent .menuZoom .menuZoomContentButtonContent .menuZoomContentButtonContentMenu ._menuContentUl {
+    width: 100%;
+    display: inline-block;
+  }
+  .header .headerContent .banner .menu .menuContent .menuZoom .menuZoomContentButtonContent .menuZoomContentButtonContentImg {
+    width: 100%;
+    height: 40%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.8;
+    background: url(../images/banner37.jpg) no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-position: bottom;
+  }
+  .header .headerContent .banner .menu .menuContent .menuZoom .menuZoomContentButtonContent ._menuContentLi {
+    margin: 0;
+    border-bottom: 1px solid;
+    width: 70%;
+    float: right;
+  }
+  .header .headerContent .banner .menu .menuContent .menuZoom .menuZoomContentButtonContent ._menuContentLi::after {
+    width: 0;
+    height: 0;
+  }
+  .header .headerContent .banner .menu .menuContent .menuZoom .menuZoomContentButtonContent ._menuContentLi:nth-child(5) {
+    border: none;
+  }
+  .header .headerContent .banner .menu .menuContent .menuZoom .menuZoomContentButtonContent ._menuContentLi .innerPage {
+    background: none;
+    position: relative;
+    top: 0;
+    box-shadow: none;
+    width: 100%;
+  }
+}
+
+.footer {
+  position: relative;
+  background-color: #000;
+}
+
+.footer .footerContennt {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 100px 0 0 0;
+}
+
+.footer .footerContennt .footerContenntTitle {
+  color: #fff;
+  text-align: center;
+}
+
+.footer .footerContennt .footerContenntTitle h1 {
+  font-size: 1.8rem;
+}
+
+.footer .footerContennt .footerContenntTitle p {
+  margin: 20px 0;
+}
+
+.footer .footerContennt .footerContenntTitle .footerContenntTitleIcon {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .footerContennt .footerContenntTitle .footerContenntTitleIcon li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footerContennt .footerContenntTitle .footerContenntTitleIcon li a {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: #000;
+  padding: 6px;
+  margin: 5px;
+  background-color: rgba(15, 132, 170, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer .footerContennt .footerContenntTitle .footerContenntTitleIcon li a:hover::before {
+  width: 300%;
+  opacity: 1;
+  transform: scale(5);
+}
+
+.footer .footerContennt .footerContenntTitle .footerContenntTitleIcon li a::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  display: inline;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  opacity: 0;
+  transform: scale(0);
+  background-color: rgba(250, 250, 250, 0.231);
+  border-radius: 50%;
+  transition: 1s ease-in-out;
+}
+
+.footer .footerContennt .footerContenntTitleText {
+  position: relative;
+  margin: 20px 0;
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent {
+  margin: 0 auto;
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li {
+  width: 31%;
+  margin: 10px;
+  color: #fff;
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li:nth-child(1) .detailed {
+  line-height: 3;
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li:nth-child(2) .detailed li {
+  color: rgba(15, 132, 170, 0.65);
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li:nth-child(2) .detailed li:nth-child(4) {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.231);
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li:nth-child(2) .detailed li:nth-child(5) {
+  border: none;
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li:nth-child(3) .detailed li {
+  display: block;
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li:nth-child(3) .detailed li:nth-child(2) {
+  border: none;
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li:nth-child(3) .detailed li h6 {
+  color: rgba(15, 132, 170, 0.65);
+  margin: 0 0 20px 0;
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li:nth-child(3) .detailed li p {
+  margin-left: 0;
+  margin: 20px 0 0 0;
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li h6 {
+  margin: 40px 0;
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li .detailed {
+  display: block;
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li .detailed li {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.231);
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li .detailed li:nth-child(4) {
+  border: none;
+}
+
+.footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li .detailed li p {
+  margin-left: 20px;
+}
+
+.footerContenntButtom {
+  color: #fff;
+  text-align: center;
+  border-top: 1px solid rgba(250, 250, 250, 0.231);
+}
+
+.footerContenntButtom p {
+  padding: 30px 0;
+}
+
+@media screen and (max-width: 960px) {
+  .footer .footerContennt {
+    padding: 20px;
+  }
+  .footer .footerContennt .footerContenntTitle {
+    padding-top: 40px;
+  }
+  .footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer .footerContennt .footerContenntTitleText .footerContenntTitleTextContent ul li {
+    width: 100%;
+  }
+}
+
+* p {
+  line-height: 1.6;
+}
+
+.main {
+  position: relative;
+}
+
+.main .mainContent {
+  margin: 0 auto;
+}
+
+.main .mainContent .mainContentNews {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.main .mainContent .mainContentNews .mainContentNewsText {
+  width: 48%;
+  display: inline-block;
+  padding: 80px 80px 80px 0;
+}
+
+.main .mainContent .mainContentNews .mainContentNewsText h1 {
+  font-size: 1.8rem;
+  margin: 0 0 40px 0;
+}
+
+.main .mainContent .mainContentNews .mainContentNewsText p {
+  font-size: 1.2rem;
+}
+
+.main .mainContent .mainContentOther {
+  position: relative;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 0 80px 0;
+}
+
+.main .mainContent .mainContentOther .mainContentOtherContent {
+  max-width: 1140px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.main .mainContent .mainContentOther .mainContentOtherContent .mainContentOtherContentBox {
+  width: 31%;
+  margin: 13px;
+}
+
+.main .mainContent .mainContentOther .mainContentOtherContent .mainContentOtherContentBox span a {
+  font-style: italic;
+  color: rgba(15, 132, 170, 0.65);
+  text-decoration: none;
+}
+
+.main .mainContent .mainContentOther .mainContentOtherContent .mainContentOtherContentBox h1 {
+  font-size: 22px;
+  margin: 0 0 30px 0;
+}
+
+.main .mainContent .mainContentOther .mainContentOtherContent .mainContentOtherContentBox p {
+  line-height: 1.6;
+}
+
+.about {
+  width: 100%;
+  height: 600px;
+  background: url(../images/banner28.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.about .aboutContent {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.about .aboutContent::before {
+  content: "";
+  width: 60%;
+  height: 600px;
+  margin: 0 auto;
+  position: absolute;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.453);
+}
+
+.about .aboutContent .aboutContentCladding {
+  padding: 30px 30px 30px0 0;
+}
+
+.about .aboutContent .aboutContentCladding .aboutContentText {
+  position: relative;
+  width: 50%;
+  margin: 0 0 40px 0;
+}
+
+.about .aboutContent .aboutContentCladding .aboutContentText h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 40px;
+}
+
+.about .aboutContent .aboutContentCladding .aboutContentText p {
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.about .aboutContent .aboutContentCladding .aboutContentImg {
+  position: relative;
+  width: 50%;
+}
+
+.about .aboutContent .aboutContentCladding .aboutContentImg .aboutContentImgTitle {
+  display: flex;
+}
+
+.about .aboutContent .aboutContentCladding .aboutContentImg .aboutContentImgTitle h1 {
+  color: #fff;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.about .aboutContent .aboutContentCladding .aboutContentImg .aboutContentImgContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about .aboutContent .aboutContentCladding .aboutContentImg .aboutContentImgContent .aboutContentImgBox {
+  width: 31%;
+  height: 100px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 0 10px 0 0;
+}
+
+.about .aboutContent .aboutContentCladding .aboutContentImg .aboutContentImgContent .aboutContentImgBox .aboutContentImgBoxImg {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.about .aboutContent .aboutContentCladding .aboutContentImg .aboutContentImgContent .aboutContentImgBox .aboutContentImgBoxImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.connect {
+  position: relative;
+  background-color: #000;
+}
+
+.connect .connectContent {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.connect .connectContent .connectContentTitle {
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+
+.connect .connectContent .connectContentTitle p {
+  color: #fff;
+}
+
+.connect .connectContent .connectContentButton {
+  display: flex;
+  justify-content: center;
+}
+
+.connect .connectContent .connectContentButton a {
+  color: #fff;
+  padding: 20px;
+  text-decoration: none;
+  background-color: rgba(15, 132, 170, 0.65);
+  position: relative;
+  overflow: hidden;
+}
+
+.connect .connectContent .connectContentButton a:hover::before {
+  opacity: 1;
+  transform: scale(4);
+}
+
+.connect .connectContent .connectContentButton a::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  opacity: 0.1;
+  transform: scale(0);
+  border-radius: 50%;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.472);
+  transition: 1s ease-in-out;
+}
+
+.mainArticle {
+  position: relative;
+  background: url(../images/banner32.jpg) no-repeat center center;
+}
+
+.mainArticle .mainArticleContent {
+  margin: 0 auto;
+  padding: 100px;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.mainArticle .mainArticleContent::before {
+  content: "";
+  width: 60%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fafafaa7;
+}
+
+.mainArticle .mainArticleContent .mainArticleContentText {
+  width: 50%;
+  position: relative;
+  z-index: 2;
+}
+
+.mainArticle .mainArticleContent .mainArticleContentText h6 {
+  font-style: italic;
+  margin: 0 0 30px 0;
+}
+
+.mainArticle .mainArticleContent .mainArticleContentText h1 {
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin: 0 0 30px 0;
+}
+
+.mainArticle .mainArticleContent .mainArticleContentText p {
+  margin: 0 0 30px 0;
+}
+
+.mainArticle .mainArticleContent .mainArticleContentText .mainArticleContentTextContent {
+  position: relative;
+}
+
+.mainArticle .mainArticleContent .mainArticleContentText .mainArticleContentTextContent .mainArticleContentTextContentBox {
+  margin: 0 0 30px 0;
+}
+
+.mainArticle .mainArticleContent .mainArticleContentText .mainArticleContentTextContent .mainArticleContentTextContentBox .mainArticleContentTextContentBoxTitle {
+  display: flex;
+}
+
+.mainArticle .mainArticleContent .mainArticleContentText .mainArticleContentTextContent .mainArticleContentTextContentBox .mainArticleContentTextContentBoxTitle i {
+  color: rgba(15, 132, 170, 0.65);
+  font-size: 26px;
+  margin-right: 20px;
+}
+
+.mainArticle .mainArticleContent .mainArticleContentText .mainArticleContentTextContent .mainArticleContentTextContentBox .mainArticleContentTextContentBoxTitle h2 {
+  margin: 0 0 30px 0;
+}
+
+.mainArticle .mainArticleContent .mainArticleContentText .mainArticleContentTextContent .mainArticleContentTextContentBox p {
+  line-height: 1.5;
+}
+
+.mainArticle .mainArticleContent .mainArticleContentText .mainArticleContentTextContent .mainArticleContentTextContentBox a {
+  text-decoration: none;
+  color: rgba(15, 132, 170, 0.65);
+}
+
+.serve {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  background: url(../images/banner33.jpg) no-repeat center center;
+}
+
+.serve::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.735);
+}
+
+.serve .serveContent {
+  width: 1140px;
+  padding: 100px 0;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.serve .serveContent .serveContentBox {
+  width: 22%;
+  margin: 10px;
+  text-align: center;
+  line-height: 2;
+}
+
+.serve .serveContent .serveContentBox i {
+  font-size: 32px;
+  color: rgba(15, 132, 170, 0.65);
+}
+
+.serve .serveContent .serveContentBox h6 {
+  font-size: 32px;
+  color: #fff;
+}
+
+.serve .serveContent .serveContentBox p {
+  color: #fff;
+}
+
+.article {
+  position: relative;
+}
+
+.article .articleContent {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.article .articleContent .articleContentTitle {
+  width: 40%;
+  margin: 0 0 40px 0;
+}
+
+.article .articleContent .articleContentTitle h1 {
+  font-size: 1.8rem;
+  margin: 0 0 20px 0;
+}
+
+.article .articleContent .articleContentText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.article .articleContent .articleContentText .articleContentTextBox {
+  width: 32%;
+  margin-right: 15px;
+}
+
+.article .articleContent .articleContentText .articleContentTextBox .articleContentTextBoxImg {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+}
+
+.article .articleContent .articleContentText .articleContentTextBox .articleContentTextBoxImg figcaption {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 8px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: white;
+  border: 1px solid;
+}
+
+.article .articleContent .articleContentText .articleContentTextBox .articleContentTextBoxImg figcaption strong {
+  width: 100%;
+  display: inline-block;
+  margin: 0 0 6px 0;
+}
+
+.article .articleContent .articleContentText .articleContentTextBox .articleContentTextBoxImg figcaption strong:nth-child(2) {
+  margin: 0;
+}
+
+.article .articleContent .articleContentText .articleContentTextBox img {
+  width: 100%;
+  height: 100%;
+}
+
+.article .articleContent .articleContentText h6 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.article .articleContent .articleContentText p {
+  line-height: 2;
+  margin: 20px 0;
+}
+
+.article .articleContent .articleContentText a {
+  color: rgba(15, 132, 170, 0.65);
+  text-decoration: none;
+}
+
+#topContent a {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background: rgba(15, 132, 170, 0.65);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -o-transform: scale(1, 1);
+  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+}
+
+#topContent a:hover {
+  animation: topContentMove 1s ease-in-out;
+  -webkit-animation: topContentMove 1s ease-in-out;
+}
+
+#topContent a span:nth-child(1) {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  position: absolute;
+  left: 29%;
+  top: 37%;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+
+#topContent a:nth-child(2) {
+  width: 1px;
+  height: 50%;
+  display: inline-block;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 34%;
+}
+
+@keyframes topContentMove {
+  0% {
+    transform: translateX(200px) rotate(360deg);
+    -webkit-transform: translateX(200px) rotate(360deg);
+    -moz-transform: translateX(200px) rotate(360deg);
+    -ms-transform: translateX(200px) rotate(360deg);
+    -o-transform: translateX(200px) rotate(360deg);
+  }
+  100% {
+    transform: translateX(0px) rotate(0deg);
+    -webkit-transform: translateX(0px) rotate(0deg);
+    -moz-transform: translateX(0px) rotate(0deg);
+    -ms-transform: translateX(0px) rotate(0deg);
+    -o-transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .main .mainContent .mainContentNews {
+    display: flex;
+    justify-content: center;
+  }
+  .main .mainContent .mainContentNews .mainContentNewsText {
+    width: 90%;
+    padding: 100px 0;
+  }
+  .main .mainContent .mainContentOther .mainContentOtherContent .mainContentOtherContentBox {
+    width: 44%;
+  }
+  .about .aboutContent .aboutContentCladding {
+    padding: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .article .articleContent {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .article .articleContent .articleContentTitle {
+    width: 90%;
+    margin: 20px;
+  }
+  .article .articleContent .articleContentTitle p {
+    line-height: 1.6;
+  }
+  .article .articleContent .articleContentText .articleContentTextBox {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .about {
+    height: 100%;
+  }
+  .about .aboutContent {
+    align-items: flex-end;
+  }
+  .about .aboutContent::before {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+  }
+  .about .aboutContent .aboutContentCladding .aboutContentText {
+    width: 100%;
+  }
+  .about .aboutContent .aboutContentCladding .aboutContentImg {
+    width: 100%;
+  }
+  .about .aboutContent .aboutContentCladding .aboutContentImg .aboutContentImgContent .aboutContentImgBox {
+    width: 100%;
+    height: 200px;
+    margin: 6px 0;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .header .headerContent .menu .menuContent ul li a {
+    color: #fff;
+  }
+  .mainArticle .mainArticleContent {
+    padding: 30px;
+  }
+  .mainArticle .mainArticleContent::before {
+    width: 100%;
+  }
+  .mainArticle .mainArticleContent .mainArticleContentText {
+    width: 100%;
+  }
+  .mainArticle .mainArticleContent .mainArticleContentText .mainArticleContentTextContent .mainArticleContentTextContentBox .mainArticleContentTextContentBoxTitle {
+    display: block;
+  }
+  .mainArticle .mainArticleContent .mainArticleContentText .mainArticleContentTextContent .mainArticleContentTextContentBox .mainArticleContentTextContentBoxTitle i {
+    padding: 0 0 20px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .serve .serveContent .serveContentBox {
+    width: 42%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main .mainContent .mainContentOther .mainContentOtherContent .mainContentOtherContentBox {
+    width: 90%;
+  }
+  .connect .connectContent .connectContentTitle {
+    margin: 40px;
+    line-height: 2;
+  }
+  .article .articleContent .articleContentText .articleContentTextBox {
+    width: 100%;
+  }
+}

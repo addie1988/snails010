@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>snails010</title>
+    <!-- icon -->
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'>
+    </link>
+    <link rel="stylesheet" type="text/css" href="./sass/style.css">
+</head>
+
+<body>
+
+
+    <!-- topContent > 錨點 -->
+    <a name="top"></a>
+
+
+    <header class="header" id="header">
+        <div class="headerContent">
+            <div class="banner">
+                <div class="bannerContent">
+                    <div class="bannerContentText">
+                        <div class="bannerContentTextContent">
+                            <h1>Porttitor Interdum</h1>
+                            <p>Tellus vel et malesuada fames faucibus rutrum sem mauris viverra suscipit consequat nibh
+                                porta sed proin faucibus mattis nullam dictum consequat sapien non tempus.</p>
+                            <div class="bannerContentTextContentButton">
+                                <a href="#">Fusce posuere</a>
+                                <a href="#">Ipsum primis</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="menu">
+                    <div class="menuContent">
+                        <div class="menuLogo">
+                            <div class="menuLogoContent">
+                                <h1>EPIGOSHA</h1>
+                            </div>
+                        </div>
+                        <ul class="_menuContentUl">
+                            <li class="_menuContentLi"><a href="#" class="_menuContentLiA" id="_menuContentLiId"
+                                    title="Home">Home</a></li>
+                            <li class="_menuContentLi">
+                                <a href="#" class="_menuContentLiALink" onclick="opencity(event, 'ElementsIdContent')"
+                                    id="ElementsId" title="Elements">Pages</a>
+                                <ul class="innerPage" id="ElementsIdContent">
+                                    <li class="innerPageLi"><a href="#">Gallery</a></li>
+                                    <li class="innerPageLi"><a href="#">Full Width</a></li>
+                                    <li class="innerPageLi"><a href="#">Sidebar Left</a></li>
+                                    <li class="innerPageLi"><a href="#">Sidebar Right</a></li>
+                                    <li class="innerPageLi"><a href="#">Basic Grid</a></li>
+                                </ul>
+                            </li>
+                            <li class="_menuContentLi">
+                                <a href="#" class="_menuContentLiALink" onclick="opencity(event, 'PagesIdContent')"
+                                    id="PagesId" title="Pages">Dropdown</a>
+                                <ul class="innerPage" id="PagesIdContent">
+                                    <li class="innerPageLi"><a href="#">Level 2</a></li>
+                                    <li class="innerPageLiNexLevel" onclick="nexLevelContent(event, 'teamId')">
+                                        <a href="#" class="_menuContentLiALinkContent">Level 2 + Drop</a>
+                                        <ul class="innerPageLiNexLevelUl" id="teamId">
+                                            <li class="innerPageLi">
+                                                <a href="#">Level 3</a>
+                                            </li>
+                                            <li class="innerPageLi">
+                                                <a href="#">Level 3</a>
+                                            </li>
+                                            <li class="innerPageLi">
+                                                <a href="#">Level 3</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="innerPageLi"><a href="#">Link Text</a></li>
+                                    <li class="innerPageLi"><a href="#">Link Text</a></li>
+                                </ul>
+                            </li>
+                            <li class="_menuContentLi"><a href="#" class="_menuContentLiA" id="_menuContentLiId"
+                                    title="Home">LINK TEXT</a></li>
+                            <li class="_menuContentLi"><a href="#" class="_menuContentLiA" id="_menuContentLiId"
+                                    title="Home">LINK TEXT</a></li>
+                        </ul>
+                        <!-- 手機 -->
+                        <div class="menuZoom">
+                            <div class="menuZoomContent">
+                                <div class="menuZoomContentButton" id="menuZoomContentButtonId"
+                                    onclick="menuZoomButton()">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="menuZoomContentButtonContent" id="menuZoomContentButtonContentId">
+                                    <h1>EPIGOSHA</h1>
+                                    <div class="menuZoomContentButtonContentMenu">
+                                        <ul class="_menuContentUl" id="_menuContentUlId">
+                                            <li class="_menuContentLi"><a href="#" class="_menuContentLiA"
+                                                    id="_menuContentLiId" title="Home">Home</a></li>
+                                            <li class="_menuContentLi">
+                                                <a href="#" class="_menuContentLiALink"
+                                                    onclick="opencity(event, 'cellPhoneElementsIdContent')"
+                                                    id="ElementsId" title="Elements">Pages</a>
+                                                <ul class="innerPage" id="cellPhoneElementsIdContent">
+                                                    <li class="innerPageLi"><a href="#">Gallery</a></li>
+                                                    <li class="innerPageLi"><a href="#">Full Width</a></li>
+                                                    <li class="innerPageLi"><a href="#">Sidebar Left</a></li>
+                                                    <li class="innerPageLi"><a href="#">Sidebar Right</a></li>
+                                                    <li class="innerPageLi"><a href="#">Basic Grid</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="_menuContentLi">
+                                                <a href="#" class="_menuContentLiALink"
+                                                    onclick="opencity(event, 'cellPhonePagesIdContent')" id="PagesId"
+                                                    title="Pages">Dropdown</a>
+                                                <ul class="innerPage" id="cellPhonePagesIdContent">
+                                                    <li class="innerPageLi"><a href="#">Level 2</a></li>
+                                                    <li class="innerPageLiNexLevel"
+                                                        onclick="nexLevelContent(event, 'cellPhoneteamId')">
+                                                        <a href="#" class="_menuContentLiALinkContent">Level 2 +
+                                                            Drop</a>
+                                                        <ul class="innerPageLiNexLevelUl" id="cellPhoneteamId">
+                                                            <li class="innerPageLi">
+                                                                <a href="#">Level 3</a>
+                                                            </li>
+                                                            <li class="innerPageLi">
+                                                                <a href="#">Level 3</a>
+                                                            </li>
+                                                            <li class="innerPageLi">
+                                                                <a href="#">Level 3</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="innerPageLi"><a href="#">Link Text</a></li>
+                                                    <li class="innerPageLi"><a href="#">Link Text</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="_menuContentLi"><a href="#" class="_menuContentLiA"
+                                                    id="_menuContentLiId" title="Home">LINK TEXT</a></li>
+                                            <li class="_menuContentLi"><a href="#" class="_menuContentLiA"
+                                                    id="_menuContentLiId" title="Home">LINK TEXT</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="menuZoomContentButtonContentImg"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="mainContent">
+
+            <!-- mainContentNews -->
+            <div class="mainContentNews">
+                <div class="mainContentNewsText">
+                    <h1>Libero Feugiat Proin Ex Metus</h1>
+                    <p>Pretium arcu malesuada donec bibendum maximus dui fusce congue tortor quis congue donec</p>
+                </div>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+
+            <!-- mainContentOther -->
+            <div class="mainContentOther">
+                <div class="mainContentOtherContent">
+                    <div class="mainContentOtherContentBox">
+                        <span><a href="#">Dapibus vulputate</a></span>
+                        <h1>Vitae Rhoncus Ligula</h1>
+                        <p>Tincidunt pulvinar dignissim enim nunc imperdiet enim vel convallis sapien enim nec enim
+                            lorem ipsum dolor</p>
+                    </div>
+                    <div class="mainContentOtherContentBox">
+                        <span><a href="#">Hendrerit sit</a></span>
+                        <h1>Eget Hendrerit Metus</h1>
+                        <p>Consectetur vel adipiscing elit phasellus fringilla dolor augue euismod et maximus nunc
+                            tempor in non</p>
+                    </div>
+                    <div class="mainContentOtherContentBox">
+                        <span><a href="#">Amet mauris in</a></span>
+                        <h1>Integer Iaculis Erat</h1>
+                        <p>Lectus quis nisi consectetur viverra sed consectetur turpis phasellus sed convallis orci sed
+                            sed ex feugiat</p>
+                    </div>
+                    <div class="mainContentOtherContentBox"></div>
+                </div>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+
+            <!-- about -->
+            <div class="about">
+                <div class="aboutContent">
+                    <div class="aboutContentCladding">
+                        <div class="aboutContentText">
+                            <h1>Maximus Nulla Vestibulum</h1>
+                            <p>Fringilla elit id nibh tincidunt facilisis in vehicula risus non tortor accumsan ut
+                                eleifend urna pretium fusce in dictum diam a gravida est integer ante justo luctus non
+                                ipsum ut aliquam mollis tellus fusce ullamcorper.</p>
+                            <p>Felis et nibh accumsan lacinia curabitur gravida posuere est eget porta mauris facilisis
+                                velit in faucibus tincidunt donec vel nisi vestibulum sagittis justo sollicitudin neque
+                                magna molestie.</p>
+                        </div>
+                        <div class="aboutContentImg">
+                            <div class="aboutContentImgTitle">
+                                <h1>Quis Ligula Dui Integer:</h1>
+                            </div>
+                            <div class="aboutContentImgContent">
+                                <div class="aboutContentImgBox">
+                                    <div class="aboutContentImgBoxImg">
+                                        <img src="./images/banner29.jpg">
+                                    </div>
+                                </div>
+                                <div class="aboutContentImgBox">
+                                    <div class="aboutContentImgBoxImg">
+                                        <img src="./images/banner30.jpg">
+                                    </div>
+                                </div>
+                                <div class="aboutContentImgBox">
+                                    <div class="aboutContentImgBoxImg">
+                                        <img src="./images/banner31.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+
+            <!-- connect -->
+            <div class="connect">
+                <div class="connectContent">
+                    <div class="connectContentTitle">
+                        <p>Feugiat Eu Nulla Etiam Rutrum Posuere Tortor A Sollicitudin</p>
+                    </div>
+                    <div class="connectContentButton">
+                        <a href="#">VITAE PLACERAT</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+
+            <!-- mainArticle -->
+            <div class="mainArticle">
+                <div class="mainArticleContent">
+                    <div class="mainArticleContentText">
+                        <h6>PORTTITOR VIVERRA</h6>
+                        <h1>Quisque A Sem Eu Elit Lacinia</h1>
+                        <p>Molestie tellus tincidunt quis praesent velit est porta et augue eu egestas eleifend nisl
+                            morbi accumsan felis.</p>
+                        <div class="mainArticleContentTextContent">
+                            <div class="mainArticleContentTextContentBox">
+                                <div class="mainArticleContentTextContentBoxTitle">
+                                    <i class="fa fa-diamond"></i>
+                                    <h2>Fermentum Enim Mattis</h2>
+                                </div>
+                                <p>Sit amet libero consectetur pharetra praesent fermentum laoreet nunc porta ultrices
+                                    nunc vel elit placerat sodales ante eget venenatis est…</p>
+                                <a href="#">Read More »</a>
+                            </div>
+                            <div class="mainArticleContentTextContentBox">
+                                <div class="mainArticleContentTextContentBoxTitle">
+                                    <i class="fa fa-dropbox"></i>
+                                    <h2>Scelerisque Vivamus Rhoncus</h2>
+                                </div>
+                                <p>Phasellus pretium felis at mollis consequat ex velit pretium urna elementum rhoncus
+                                    turpis massa non nulla quisque elementum tortor…</p>
+                                <a href="#">Read More »</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+
+            <!-- serve -->
+            <div class="serve">
+                <div class="serveContent">
+                    <div class="serveContentBox">
+                        <i class="fa fa-life-bouy"></i>
+                        <h6>2345</h6>
+                        <p>DIGNISSIM</p>
+                    </div>
+                    <div class="serveContentBox">
+                        <i class="fa fa-taxi"></i>
+                        <h6>1234</h6>
+                        <p>LOBORTIS</p>
+                    </div>
+                    <div class="serveContentBox">
+                        <i class="fa fa-cogs"></i>
+                        <h6>345</h6>
+                        <p>PORTTITOR</p>
+                    </div>
+                    <div class="serveContentBox">
+                        <i class="fa fa-gg"></i>
+                        <h6>12345</h6>
+                        <p>MALESUADA</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+
+            <!-- article -->
+            <div class="article">
+                <div class="articleContent">
+                    <div class="articleContentTitle">
+                        <h1>Dapibus Erat At Tincidunt</h1>
+                        <P>Diam etiam euismod faucibus metus quis leo etiam imperdiet lectus id cursus tristique.</P>
+                    </div>
+                    <div class="articleContentText">
+                        <div class="articleContentTextBox">
+                            <div class="articleContentTextBoxImg">
+                                <figcaption><strong>03</strong><strong>Apr</strong></figcaption>
+                                <img src="./images/banner34.jpg">
+                            </div>
+                            <h6>Aliquam Augue Eget</h6>
+                            <p>Efficitur nulla felis quis arcu praesent vitae luctus erat eget pulvinar tortor
+                                vestibulum aliquet semper tortor et…</p>
+                            <a href="#">Read More »</a>
+                        </div>
+                        <div class="articleContentTextBox">
+                            <div class="articleContentTextBoxImg">
+                                <figcaption><strong>31</strong><strong>Mar</strong></figcaption>
+                                <img src="./images/banner35.jpg">
+                            </div>
+                            <h6>Fermentum Lorem Nullam
+                            </h6>
+                            <p>Maximus tempus risus aliquam sodales convallis mi sollicitudin malesuada ligula bibendum
+                                quis sed ligula ex…</p>
+                            <a href="#">Read More »</a>
+                        </div>
+                        <div class="articleContentTextBox">
+                            <div class="articleContentTextBoxImg">
+                                <figcaption><strong>18</strong><strong>Mar</strong></figcaption>
+                                <img src="./images/banner36.jpg">
+                            </div>
+                            <h6>Venenatis Ac Massa</h6>
+                            <p>Euismod ut lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse dictum sit
+                                amet quam eget…</p>
+                            <a href="#">Read More »</a>
+                        </div>
+                        <div class="articleContentTextBox"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ------------------------------------------------------------------- -->
+
+            <!-- footer -->
+            <div class="footer">
+                <div class="footerContennt">
+                    <div class="footerContenntTitle">
+                        <h1>EPIGOSHA</h1>
+                        <p>Egestas purus quis arcu sagittis vitae finibus lorem egestas fusce maximus aliquam.</p>
+                        <ul class="footerContenntTitleIcon">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footerContenntTitleText">
+                        <div class="footerContenntTitleTextContent">
+                            <ul>
+                                <li>
+                                    <h6>Porta Nec Dignissim</h6>
+                                    <ul class="detailed">
+                                        <li><i class="fa fa-map-marker"></i>
+                                            <p>Street Name & Number, Town, Postcode/Zip</p>
+                                        </li>
+                                        <li>
+                                            <i class="fa fa-phone"></i>
+                                            <di class="detailedP">
+                                                <p>+00 (123) 456 7890</p>
+                                                <p>+00 (123) 456 7890</p>
+                                            </di>
+                                        </li>
+                                        <li><i class="fa fa-fax"></i>
+                                            <p>+00 (123) 456 7890</p>
+                                        </li>
+                                        <li><i class="fa fa-envelope-o"></i>
+                                            <p>info@domain.com</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h6>Odio Sagittis Eros</h6>
+                                    <ul class="detailed">
+                                        <li>Justo iaculis phasellus eget lacus</li>
+                                        <li>Ac sem ullamcorper sollicitudin nunc</li>
+                                        <li>Elementum augue ac lacus molestie</li>
+                                        <li>Pretium augue posuere nullam aliquam</li>
+                                        <li>Mi dolor sed lacinia diam facilisis</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <h6>Sed Volutpat Feugiat
+                                    </h6>
+                                    <ul class="detailed">
+                                        <li>
+                                            <h6>Vel Fermentum Tellus</h6>
+                                            <time>Friday, 6<sup>th</sup> April 2045</time>
+                                            <p>Morbi vitae nibh et turpis feugiat pharetra eget et dolor integer mollis…
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <h6>Ipsum Ac Lacus Duis</h6>
+                                            <time>Thursday, 5<sup>th</sup> April 2045</time>
+                                            <p>Rhoncus pulvinar fusce leo mi congue sed orci sit amet scelerisque…</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerContenntButtom">
+                    <p>Copyright ©2012~2022 Snails . All rights reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+     <!-- ------------------------------------------------------- -->
+
+     <!-- topContent > top -->
+<div id="topContent">
+    <a href="#top">
+        <span></span>
+        <span></span>
+    </a>
+</div>
+
+
+    <!-- jq -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- ------------------------------------------------------- -->
+
+    <!-- style.js -->
+    <script src="./js/style.js"></script>
+
+</body>
+
+</html>
